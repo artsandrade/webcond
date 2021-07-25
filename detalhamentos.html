@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <title>WebCond | Detalhamentos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="assets/images/webcond-icone.svg">
+
+  <link href="assets/libs/chartist/chartist.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Css -->
+  <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+  <!-- Icons Css -->
+  <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+  <!-- App Css-->
+  <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-sidebar="dark">
+
+  <!-- Begin page -->
+  <div id="layout-wrapper">
+
+    <header id="page-topbar">
+      <div class="navbar-header">
+        <div class="d-flex">
+          <!-- LOGO -->
+          <div class="navbar-brand-box">
+            <a href="painel.html" class="logo logo-dark">
+              <span class="logo-sm">
+                <img src="assets/images/webcond-icone.svg" alt="" height="22">
+              </span>
+              <span class="logo-lg">
+                <img src="assets/images/webcond-logo.svg" alt="" height="17">
+              </span>
+            </a>
+
+            <a href="painel.html" class="logo logo-light">
+              <span class="logo-sm">
+                <img src="assets/images/webcond-icone.svg" alt="" height="22">
+              </span>
+              <span class="logo-lg">
+                <img src="assets/images/webcond-logo.svg" alt="" height="30">
+              </span>
+            </a>
+          </div>
+
+          <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
+            <i class="mdi mdi-menu"></i>
+          </button>
+        </div>
+
+        <div class="d-flex">
+          <div class="d-none d-sm-block">
+            <div class="dropdown pt-3 mr-1 d-inline-block">
+              <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Aa +
+              </a>
+            </div>
+          </div>
+
+          <div class="d-none d-sm-block">
+            <div class="dropdown pt-3 mr-1 d-inline-block">
+              <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Aa -
+              </a>
+            </div>
+          </div>
+
+          <div class="d-none d-sm-block">
+            <div class="dropdown pt-3 mr-1 d-inline-block">
+              <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"><i class="fas fa-adjust"></i> Contraste
+              </a>
+            </div>
+          </div>
+
+          <div class="d-none d-sm-block">
+            <div class="dropdown pt-3 d-inline-block">
+              <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"><i class="fas fa-sign-language"></i> Libras
+              </a>
+            </div>
+          </div>
+
+          <div class="dropdown d-inline-block">
+            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img class="rounded-circle header-profile-user" src="assets/images/users/user-4.jpg" alt="Header Avatar">
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item text-danger" href="#"><i
+                  class="bx bx-power-off font-size-17 align-middle mr-1 text-danger"></i> Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="vertical-menu">
+
+      <div data-simplebar class="h-100">
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+          <!-- Left Menu Start -->
+          <ul class="metismenu list-unstyled" id="side-menu">
+
+            <li>
+              <a href="painel.html" class="waves-effect">
+                <i class="fas fa-home"></i>
+                <span>Início</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="cameras-de-seguranca.html" class=" waves-effect">
+                <i class="fas fa-camera"></i>
+                <span>Câmeras de segurança</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="contato.html" class=" waves-effect">
+                <i class="fas fa-phone"></i>
+                <span>Contato</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="detalhamentos.html" class=" waves-effect">
+                <i class="fas fa-chart-line"></i>
+                <span>Detalhamentos</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="faturas.html" class=" waves-effect">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <span>Faturas</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="reservas.html" class=" waves-effect">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Reservas</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="reunioes.html" class=" waves-effect">
+                <i class="fas fa-handshake"></i>
+                <span>Reuniões</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <!-- Sidebar -->
+      </div>
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+      <div class="page-content">
+        <div class="container-fluid">
+
+          <!-- start page title -->
+          <div class="row align-items-center">
+            <div class="col-sm-6">
+              <div class="page-title-box">
+                <h4 class="font-size-18">Detalhamentos</h4>
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="javascript: void(0);">Painel</a></li>
+                  <li class="breadcrumb-item active">Detalhamentos</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <!-- end page title -->
+
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="form-group row">
+                    <label for="example-month-input" class="col-sm-2 col-form-label">Mês</label>
+                    <div class="col-sm-4">
+                      <select class="form-control inline" name="" id="">
+                        <option value="">Selecionar</option>
+                        <option value="">Janeiro</option>
+                        <option value="">Fevereiro</option>
+                        <option value="">Março</option>
+                        <option value="">Abril</option>
+                        <option value="">Maio</option>
+                        <option value="">Junho</option>
+                        <option value="">Julho</option>
+                        <option value="">Agosto</option>
+                        <option value="">Setembro</option>
+                        <option value="">Outubro</option>
+                        <option value="">Novembro</option>
+                        <option value="">Dezembro</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-2">
+                      <button class="btn btn-primary">Filtrar</button>
+
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-hover table-centered table-nowrap mb-0">
+                      <thead>
+                        <tr>
+                          <th scope="col">Data</th>
+                          <th scope="col">Detalhe</th>
+                          <th scope="col">Valor</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>05/07/2021</td>
+                          <td>Pagamento de salário jul/21 faxineira Ivone Santos</td>
+                          <td>R$ 1.997,50</td>
+                          <td><button class="btn btn-primary" data-toggle="modal"
+                              data-target=".bs-example-modal-center">Visualizar</button></td>
+                        </tr>
+                        <tr>
+                          <td>05/07/2021</td>
+                          <td>Pagamento de salário jul/21 zelador José dos Reis</td>
+                          <td>R$ 1.997,50</td>
+                          <td><button class="btn btn-primary" data-toggle="modal"
+                              data-target=".bs-example-modal-center">Visualizar</button></td>
+                        </tr>
+                        <tr>
+                          <td>05/07/2021</td>
+                          <td>Pagamento de salário jul/21 porteiro Renato Falquete</td>
+                          <td>R$ 1.997,50</td>
+                          <td><button class="btn btn-primary" data-toggle="modal"
+                              data-target=".bs-example-modal-center">Visualizar</button></td>
+                        </tr>
+                        <tr>
+                          <td>05/07/2021</td>
+                          <td>Manutenção esteira academia</td>
+                          <td>R$ 580,00</td>
+                          <td><button class="btn btn-primary" data-toggle="modal"
+                              data-target=".bs-example-modal-center">Visualizar</button></td>
+                        </tr>
+                        <tr>
+                          <td>05/07/2021</td>
+                          <td>Limpeza das piscinas</td>
+                          <td>R$ 300,00</td>
+                          <td><button class="btn btn-primary" data-toggle="modal"
+                              data-target=".bs-example-modal-center">Visualizar</button></td>
+                        </tr>
+                        <tr>
+                          <td>05/07/2021</td>
+                          <td>Pagamento fatua de água jul/21</td>
+                          <td>R$ 5.830,99</td>
+                          <td><button class="btn btn-primary" data-toggle="modal"
+                              data-target=".bs-example-modal-center">Visualizar</button></td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog"
+              aria-labelledby="mySmallModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title mt-0">Visualizar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group row">
+                      <label for="example-month-input" class="col-sm-2 col-form-label">Data</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" name="" id="" value="05/07/2021">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="example-month-input" class="col-sm-2 col-form-label">Detalhe</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" name="" id="" value="Pagamento salário jul/2021 faxineira Ivone Santos">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="example-month-input" class="col-sm-2 col-form-label">Valor</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" name="" id="" value="R$ 1.997,90">
+                      </div>
+                    </div>
+                    <div class="form-group row col-12">
+                      <label for="example-month-input">Observação</label>
+                      <textarea name="" id="" cols="1" rows="3" class="form-control">O pagamento refere-se à prestação dos serviços de limpeza pela colaboradora Ivone Santos nas áreas em comum do condomínio.</textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div>
+
+            <div class="col-xl-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Gastos do condomínio nos últimos 8 meses</h4>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div>
+                        <div id="chart-with-area" class="ct-chart earning ct-golden-section">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end row -->
+                </div>
+              </div>
+              <!-- end card -->
+            </div>
+
+          </div>
+          <!-- end row -->
+
+        </div> <!-- container-fluid -->
+      </div>
+      <!-- End Page-content -->
+
+
+
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              ©
+              <script>document.write(new Date().getFullYear())</script> WebCond.
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- end main content-->
+
+  </div>
+  <!-- END layout-wrapper -->
+
+  <!-- JAVASCRIPT -->
+  <script src="assets/libs/jquery/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+  <script src="assets/libs/simplebar/simplebar.min.js"></script>
+  <script src="assets/libs/node-waves/waves.min.js"></script>
+
+  <!-- Peity chart-->
+  <script src="assets/libs/peity/jquery.peity.min.js"></script>
+
+  <!-- Plugin Js-->
+  <script src="assets/libs/chartist/chartist.min.js"></script>
+  <script src="assets/libs/chartist-plugin-tooltips/chartist-plugin-tooltip.min.js"></script>
+
+  <script src="assets/js/pages/dashboard.init.js"></script>
+
+  <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

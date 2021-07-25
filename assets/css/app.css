@@ -2147,8 +2147,8 @@ input[switch="dark"]:checked + label {
   color: #343a40;
   border: 1px solid #f8f9fa; }
   .table-rep-plugin .btn-group .btn-default.btn-primary {
-    background-color: #626ed4;
-    border-color: #626ed4;
+    background-color: #355CE4;
+    border-color: #355CE4;
     color: #fff;
     -webkit-box-shadow: 0 0 0 2px rgba(98, 110, 212, 0.5);
             box-shadow: 0 0 0 2px rgba(98, 110, 212, 0.5); }
