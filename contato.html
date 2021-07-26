@@ -185,9 +185,59 @@
                 </ol>
               </div>
             </div>
+            <div class="col-sm-6">
+              <div class="float-right d-none d-md-block">
+                <div class="dropdown">
+                  <button class="btn btn-primary dropdown-toggle waves-effect waves-light" type="button"
+                    data-toggle="modal" data-target=".bs-example-modal-center">
+                    Cadastrar
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- end page title -->
-
+          <div style='clear:both'></div>
+          <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog"
+            aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title mt-0">Cadastrar</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group row">
+                    <label for="example-month-input" class="col-sm-3 col-form-label">Data e hora</label>
+                    <div class="col-sm-9">
+                      <input type="date" class="form-control" name="" id="">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="example-month-input" class="col-sm-3 col-form-label">Assunto</label>
+                    <div class="col-sm-9">
+                      <select name="" id="" class="form-control">
+                        <option value="">Selecionar</option>
+                        <option value="">Dúvida</option>
+                        <option value="">Reclamação</option>
+                        <option value="">Sugestão</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group row col-12">
+                    <label for="example-month-input">Mensagem</label>
+                    <textarea name="" id="" cols="1" rows="3"
+                      class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Cadastrar</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div>
           <div class="row"></div>
           <div class="col-xl-12">
             <div class="card">
@@ -354,4 +404,21 @@
           </div>
         </div>
       </footer>
+
+      <!-- JAVASCRIPT -->
+  <script src="assets/libs/jquery/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+  <script src="assets/libs/simplebar/simplebar.min.js"></script>
+  <script src="assets/libs/node-waves/waves.min.js"></script>
+
+  <!-- plugin js -->
+  <script src="assets/libs/moment/min/moment.min.js"></script>
+  <script src="assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
+  <script src="assets/libs/@fullcalendar/core/main.min.js"></script>
+  <script src="assets/libs/@fullcalendar/bootstrap/main.min.js"></script>
+  <script src="assets/libs/@fullcalendar/daygrid/main.min.js"></script>
+  <script src="assets/libs/@fullcalendar/timegrid/main.min.js"></script>
+  <script src="assets/libs/@fullcalendar/interaction/main.min.js"></script>
+
 
