@@ -13,6 +13,7 @@
   <link href="assets/libs/@fullcalendar/daygrid/main.min.css" rel="stylesheet" type="text/css" />
   <link href="assets/libs/@fullcalendar/bootstrap/main.min.css" rel="stylesheet" type="text/css" />
   <link href="assets/libs/@fullcalendar/timegrid/main.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/libs/calendar/main.css" rel="stylesheet" type="text/css" />
 
   <!-- Bootstrap Css -->
   <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -163,6 +164,15 @@
               </a>
             </li>
 
+            <hr style="background-color: white;">
+
+            <li>
+              <a href="ajuda.html" class=" waves-effect">
+                <i class="fas fa-question-circle"></i>
+                <span>Ajuda</span>
+              </a>
+            </li>
+
           </ul>
         </div>
         <!-- Sidebar -->
@@ -182,10 +192,10 @@
           <div class="row align-items-center">
             <div class="col-sm-6">
               <div class="page-title-box">
-                <h4 class="font-size-18">Detalhamentos</h4>
+                <h4 class="font-size-18">Reservas</h4>
                 <ol class="breadcrumb mb-0">
                   <li class="breadcrumb-item"><a href="javascript: void(0);">Painel</a></li>
-                  <li class="breadcrumb-item active">Detalhamentos</li>
+                  <li class="breadcrumb-item active">Reservas</li>
                 </ol>
               </div>
             </div>
@@ -274,10 +284,11 @@
                     </div>
                     <div class="modal-body">
                       <div class="form-group row">
-                        <label for="example-month-input" class="col-sm-3 col-form-label">Detalhe</label>
+                        <label for="example-month-input" class="col-sm-3 col-form-label">Local</label>
                         <div class="col-sm-9">
                           <select name="" id="" class="form-control">
                             <option value="">Selecionar</option>
+                            <option value="">Churrasqueira</option>
                           </select>
                         </div>
                       </div>
@@ -289,8 +300,7 @@
                       </div>
                       <div class="form-group row col-12">
                         <label for="example-month-input">Observação</label>
-                        <textarea name="" id="" cols="1" rows="3"
-                          class="form-control">O pagamento refere-se à prestação dos serviços de limpeza pela colaboradora Ivone Santos nas áreas em comum do condomínio.</textarea>
+                        <textarea name="" id="" cols="1" rows="3" class="form-control"></textarea>
                       </div>
                     </div>
                     <div class="modal-footer">
@@ -314,10 +324,11 @@
                 </div>
                 <div class="modal-body">
                   <div class="form-group row">
-                    <label for="example-month-input" class="col-sm-3 col-form-label">Detalhe</label>
+                    <label for="example-month-input" class="col-sm-3 col-form-label">Local</label>
                     <div class="col-sm-9">
                       <select name="" id="" class="form-control">
                         <option value="">Selecionar</option>
+                        <option value="">Churrasqueira</option>
                       </select>
                     </div>
                   </div>
@@ -329,8 +340,7 @@
                   </div>
                   <div class="form-group row col-12">
                     <label for="example-month-input">Observação</label>
-                    <textarea name="" id="" cols="1" rows="3"
-                      class="form-control">O pagamento refere-se à prestação dos serviços de limpeza pela colaboradora Ivone Santos nas áreas em comum do condomínio.</textarea>
+                    <textarea name="" id="" cols="1" rows="3" class="form-control"></textarea>
                   </div>
                 </div>
                 <div class="modal-footer">
@@ -382,6 +392,8 @@
   <script src="assets/libs/@fullcalendar/daygrid/main.min.js"></script>
   <script src="assets/libs/@fullcalendar/timegrid/main.min.js"></script>
   <script src="assets/libs/@fullcalendar/interaction/main.min.js"></script>
+  <script src="assets/libs/calendar/main.js"></script>
+  <script src="assets/libs/calendar/locales/pt-br.js"></script>
 
   <!-- Calendar init -->
   <script src="assets/js/pages/calendar.init.js"></script>

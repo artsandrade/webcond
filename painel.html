@@ -10,6 +10,13 @@
 
   <link href="assets/libs/chartist/chartist.min.css" rel="stylesheet">
 
+  <!-- DataTables -->
+  <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Responsive datatable examples -->
+  <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
   <!-- Bootstrap Css -->
   <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
   <!-- Icons Css -->
@@ -159,6 +166,15 @@
               </a>
             </li>
 
+            <hr style="background-color: white;">
+
+            <li>
+              <a href="ajuda.html" class=" waves-effect">
+                <i class="fas fa-question-circle"></i>
+                <span>Ajuda</span>
+              </a>
+            </li>
+
           </ul>
         </div>
         <!-- Sidebar -->
@@ -257,7 +273,7 @@
                       <i class="fas fa-file-invoice-dollar fa-2x"></i>
                     </div>
                     <h5 class="font-size-16 text-uppercase mt-0 text-white">Total de faturas</h5>
-                    <h4 class="font-weight-medium font-size-24">2436
+                    <h4 class="font-weight-medium font-size-24">25
                     </h4>
                   </div>
                   <div class="pt-2">
@@ -297,7 +313,7 @@
                 <div class="card-body">
                   <h4 class="card-title mb-4">Minhas reservas</h4>
                   <div class="table-responsive">
-                    <table class="table table-hover table-centered table-nowrap mb-0">
+                    <table class="table table-hover table-centered table-nowrap mb-0 tabela" id="datatable">
                       <thead>
                         <tr>
                           <th scope="col">Data e hora</th>
@@ -412,6 +428,25 @@
   <!-- Plugin Js-->
   <script src="assets/libs/chartist/chartist.min.js"></script>
   <script src="assets/libs/chartist-plugin-tooltips/chartist-plugin-tooltip.min.js"></script>
+
+  <!-- Required datatable js -->
+  <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <!-- Buttons examples -->
+  <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+  <script src="assets/libs/jszip/jszip.min.js"></script>
+  <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+  <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+  <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+  <!-- Responsive examples -->
+  <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+  <!-- Datatable init js -->
+  <script src="assets/js/pages/datatables.init.js"></script> 
 
   <script src="assets/js/pages/dashboard.init.js"></script>
 

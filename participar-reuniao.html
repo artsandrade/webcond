@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>WebCond | Reuniões</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/webcond-icone.svg">
+
+    <link href="assets/libs/chartist/chartist.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-sidebar="dark">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="painel.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/webcond-icone.svg" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/webcond-logo.svg" alt="" height="17">
+                            </span>
+                        </a>
+
+                        <a href="painel.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/webcond-icone.svg" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/webcond-logo.svg" alt="" height="30">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect"
+                        id="vertical-menu-btn">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+                </div>
+
+                <div class="d-flex">
+                    <div class="d-none d-sm-block">
+                        <div class="dropdown pt-3 mr-1 d-inline-block">
+                            <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Aa +
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-sm-block">
+                        <div class="dropdown pt-3 mr-1 d-inline-block">
+                            <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Aa -
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-sm-block">
+                        <div class="dropdown pt-3 mr-1 d-inline-block">
+                            <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                    class="fas fa-adjust"></i> Contraste
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-sm-block">
+                        <div class="dropdown pt-3 d-inline-block">
+                            <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                    class="fas fa-sign-language"></i> Libras
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/user-4.jpg"
+                                alt="Header Avatar">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item text-danger" href="#"><i
+                                    class="bx bx-power-off font-size-17 align-middle mr-1 text-danger"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+
+                        <li>
+                            <a href="painel.html" class="waves-effect">
+                                <i class="fas fa-home"></i>
+                                <span>Início</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="cameras-de-seguranca.html" class=" waves-effect">
+                                <i class="fas fa-camera"></i>
+                                <span>Câmeras de segurança</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contato.html" class=" waves-effect">
+                                <i class="fas fa-phone"></i>
+                                <span>Contato</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="detalhamentos.html" class=" waves-effect">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Detalhamentos</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="faturas.html" class=" waves-effect">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                                <span>Faturas</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="reservas.html" class=" waves-effect">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Reservas</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="reunioes.html" class=" waves-effect">
+                                <i class="fas fa-handshake"></i>
+                                <span>Reuniões</span>
+                            </a>
+                        </li>
+
+                        <hr style="background-color: white;">
+
+                        <li>
+                            <a href="ajuda.html" class=" waves-effect">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Ajuda</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="page-title-box">
+                                <h4 class="font-size-18">Reuniões</h4>
+                                <ol class="breadcrumb mb-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Painel</a></li>
+                                    <li class="breadcrumb-item">Reuniões</li>
+                                    <li class="breadcrumb-item active">Participar</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-body">
+                                <img src="assets/images/users/avatar-1.jpg"
+                                    style="width: 100%; height: 70vh; position: relative; object-fit: contain;">
+                                <div style="position: absolute; bottom: 50px; left: 55px;">
+                                    <button class="btn btn-primary"
+                                        style="border-radius: 50%; text-align: center; margin-right: 10px; width: 50px; height: 50px; font-size: 20px;">
+                                        <i class="fas fa-microphone"></i>
+                                    </button>
+                                    <button class="btn btn-primary"
+                                        style="border-radius: 50%; text-align: center; margin-right: 10px; width: 50px; height: 50px; font-size: 20px;">
+                                        <i class="fas fa-camera"></i>
+                                    </button>
+                                    <button class="btn btn-primary"
+                                        style="border-radius: 50%; text-align: center; width: 50px; height: 50px; font-size: 20px;">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="assets/images/users/avatar-1.jpg" style="height: 70%;" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="assets/images/users/avatar-2.jpg" style="height: 70%;" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="assets/images/users/avatar-3.jpg" style="height: 70%;" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="assets/images/users/avatar-4.jpg" style="height: 70%;" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="assets/images/users/avatar-5.jpg" style="height: 70%;" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="assets/images/users/avatar-6.jpg" style="height: 70%;" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <h1>Assembléia ordinária Junho/2021</h1>
+                            <div>
+                                <span style="font-family: Sarabun,sans-serif;
+                                font-size: 16px;">
+                                    Data:
+                                    <span style="font-size: 16px;">01/06/2021</span>
+                                </span>
+                                <span style="font-family: Sarabun,sans-serif;
+                                font-size: 16px;">
+                                    Horário:
+                                    <span style="font-size: 16px;">19:00</span>
+                                </span>
+                            </div>
+                            <div class="mt-2">
+                                <span style="font-family: Sarabun,sans-serif;
+                                font-size: 18px;">Descrição: </span>
+                                <p style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Libero doloribus fugit error
+                                    harum cum inventore veniam soluta eum ut corporis dicta sequi pariatur quia,
+                                    recusandae, dolorem, sint repellendus consectetur ex.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus fugit
+                                    error
+                                    harum cum inventore veniam soluta eum ut corporis dicta sequi pariatur quia,
+                                    recusandae, dolorem, sint repellendus consectetur ex.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus fugit
+                                    error
+                                    harum cum inventore veniam soluta eum ut corporis dicta sequi pariatur quia,
+                                    recusandae, dolorem, sint repellendus consectetur ex.</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-4">Chat</h4>
+                                    <div class="chat-conversation">
+                                        <ul class="conversation-list" data-simplebar style="max-height: 367px;">
+                                            <li class="clearfix">
+                                                <div class="chat-avatar">
+                                                    <img src="assets/images/users/user-2.jpg"
+                                                        class="avatar-xs rounded-circle" alt="male">
+                                                    <span class="time">10:00</span>
+                                                </div>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <span class="user-name">John Deo</span>
+                                                        <p>
+                                                            Hello!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix odd">
+                                                <div class="chat-avatar">
+                                                    <img src="assets/images/users/user-3.jpg"
+                                                        class="avatar-xs rounded-circle" alt="Female">
+                                                    <span class="time">10:01</span>
+                                                </div>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <span class="user-name">Smith</span>
+                                                        <p>
+                                                            Hi, How are you? What about our next meeting?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <div class="chat-avatar">
+                                                    <img src="assets/images/users/user-2.jpg"
+                                                        class="avatar-xs rounded-circle" alt="male">
+                                                    <span class="time">10:04</span>
+                                                </div>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <span class="user-name">John Deo</span>
+                                                        <p>
+                                                            Yeah everything is fine
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix odd">
+                                                <div class="chat-avatar">
+                                                    <img src="assets/images/users/user-3.jpg"
+                                                        class="avatar-xs rounded-circle" alt="male">
+                                                    <span class="time">10:05</span>
+                                                </div>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <span class="user-name">Smith</span>
+                                                        <p>
+                                                            Wow that's great
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="clearfix odd">
+                                                <div class="chat-avatar">
+                                                    <img src="assets/images/users/user-3.jpg"
+                                                        class="avatar-xs rounded-circle" alt="male">
+                                                    <span class="time">10:08</span>
+                                                </div>
+                                                <div class="conversation-text">
+                                                    <div class="ctext-wrap">
+                                                        <span class="user-name mb-2">Smith</span>
+
+                                                        <img src="assets/images/small/img-1.jpg" alt="" height="48"
+                                                            class="rounded mr-2">
+                                                        <img src="assets/images/small/img-2.jpg" alt="" height="48"
+                                                            class="rounded">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="row">
+                                            <div class="col-sm-8 col-8 chat-inputbar">
+                                                <input type="text" class="form-control chat-input"
+                                                    placeholder="Escreva sua mensagem...">
+                                            </div>
+                                            <div class="col-sm-4 col-4 chat-send">
+                                                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Page-content -->
+
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                ©
+                                <script>document.write(new Date().getFullYear())</script> WebCond.
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+        <!-- Peity chart-->
+        <script src="assets/libs/peity/jquery.peity.min.js"></script>
+
+        <!-- Plugin Js-->
+        <script src="assets/libs/chartist/chartist.min.js"></script>
+        <script src="assets/libs/chartist-plugin-tooltips/chartist-plugin-tooltip.min.js"></script>
+
+        <script src="assets/js/pages/dashboard.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,392 +1,307 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <title>WebCond | Contato</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/webcond-icone.svg" />
 
-    <link href="assets/libs/chartist/chartist.min.css" rel="stylesheet" />
+<head>
+  <meta charset="utf-8" />
+  <title>WebCond | Contato</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="assets/images/webcond-icone.svg" />
 
-    <!-- Bootstrap Css -->
-    <link
-      href="assets/css/bootstrap.min.css"
-      id="bootstrap-style"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <!-- App Css-->
-    <link
-      href="assets/css/app.min.css"
-      id="app-style"
-      rel="stylesheet"
-      type="text/css"
-    />
-  </head>
+  <link href="assets/libs/chartist/chartist.min.css" rel="stylesheet" />
 
-  <body data-sidebar="dark">
-    <!-- Begin page -->
-    <div id="layout-wrapper">
-      <header id="page-topbar">
-        <div class="navbar-header">
-          <div class="d-flex">
-            <!-- LOGO -->
-            <div class="navbar-brand-box">
-              <a href="painel.html" class="logo logo-dark">
-                <span class="logo-sm">
-                  <img
-                    src="assets/images/webcond-icone.svg"
-                    alt=""
-                    height="22"
-                  />
-                </span>
-                <span class="logo-lg">
-                  <img
-                    src="assets/images/webcond-logo.svg"
-                    alt=""
-                    height="17"
-                  />
-                </span>
-              </a>
+  <!-- Bootstrap Css -->
+  <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+  <!-- Icons Css -->
+  <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+  <!-- App Css-->
+  <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+</head>
 
-              <a href="painel.html" class="logo logo-light">
-                <span class="logo-sm">
-                  <img
-                    src="assets/images/webcond-icone.svg"
-                    alt=""
-                    height="22"
-                  />
-                </span>
-                <span class="logo-lg">
-                  <img
-                    src="assets/images/webcond-logo.svg"
-                    alt=""
-                    height="30"
-                  />
-                </span>
-              </a>
-            </div>
+<body data-sidebar="dark">
+  <!-- Begin page -->
+  <div id="layout-wrapper">
+    <header id="page-topbar">
+      <div class="navbar-header">
+        <div class="d-flex">
+          <!-- LOGO -->
+          <div class="navbar-brand-box">
+            <a href="painel.html" class="logo logo-dark">
+              <span class="logo-sm">
+                <img src="assets/images/webcond-icone.svg" alt="" height="22" />
+              </span>
+              <span class="logo-lg">
+                <img src="assets/images/webcond-logo.svg" alt="" height="17" />
+              </span>
+            </a>
 
-            <button
-              type="button"
-              class="btn btn-sm px-3 font-size-24 header-item waves-effect"
-              id="vertical-menu-btn"
-            >
-              <i class="mdi mdi-menu"></i>
-            </button>
+            <a href="painel.html" class="logo logo-light">
+              <span class="logo-sm">
+                <img src="assets/images/webcond-icone.svg" alt="" height="22" />
+              </span>
+              <span class="logo-lg">
+                <img src="assets/images/webcond-logo.svg" alt="" height="30" />
+              </span>
+            </a>
           </div>
 
-          <div class="d-flex">
-            <div class="d-none d-sm-block">
-              <div class="dropdown pt-3 mr-1 d-inline-block">
-                <a
-                  class="btn btn-primary"
-                  href="#"
-                  role="button"
-                  id="dropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Aa +
-                </a>
-              </div>
-            </div>
+          <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
+            <i class="mdi mdi-menu"></i>
+          </button>
+        </div>
 
-            <div class="d-none d-sm-block">
-              <div class="dropdown pt-3 mr-1 d-inline-block">
-                <a
-                  class="btn btn-primary"
-                  href="#"
-                  role="button"
-                  id="dropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Aa -
-                </a>
-              </div>
+        <div class="d-flex">
+          <div class="d-none d-sm-block">
+            <div class="dropdown pt-3 mr-1 d-inline-block">
+              <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Aa +
+              </a>
             </div>
+          </div>
 
-            <div class="d-none d-sm-block">
-              <div class="dropdown pt-3 mr-1 d-inline-block">
-                <a
-                  class="btn btn-primary"
-                  href="#"
-                  role="button"
-                  id="dropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  ><i class="fas fa-adjust"></i> Contraste
-                </a>
-              </div>
+          <div class="d-none d-sm-block">
+            <div class="dropdown pt-3 mr-1 d-inline-block">
+              <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Aa -
+              </a>
             </div>
+          </div>
 
-            <div class="d-none d-sm-block">
-              <div class="dropdown pt-3 d-inline-block">
-                <a
-                  class="btn btn-primary"
-                  href="#"
-                  role="button"
-                  id="dropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  ><i class="fas fa-sign-language"></i> Libras
-                </a>
-              </div>
+          <div class="d-none d-sm-block">
+            <div class="dropdown pt-3 mr-1 d-inline-block">
+              <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"><i class="fas fa-adjust"></i> Contraste
+              </a>
             </div>
+          </div>
 
-            <div class="dropdown d-inline-block">
-              <button
-                type="button"
-                class="btn header-item waves-effect"
-                id="page-header-user-dropdown"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <img
-                  class="rounded-circle header-profile-user"
-                  src="assets/images/users/user-4.jpg"
-                  alt="Header Avatar"
-                />
-              </button>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item text-danger" href="#"
-                  ><i
-                    class="
+          <div class="d-none d-sm-block">
+            <div class="dropdown pt-3 d-inline-block">
+              <a class="btn btn-primary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"><i class="fas fa-sign-language"></i> Libras
+              </a>
+            </div>
+          </div>
+
+          <div class="dropdown d-inline-block">
+            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img class="rounded-circle header-profile-user" src="assets/images/users/user-4.jpg"
+                alt="Header Avatar" />
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item text-danger" href="#"><i class="
                       bx bx-power-off
                       font-size-17
                       align-middle
                       mr-1
                       text-danger
-                    "
-                  ></i>
-                  Logout</a
-                >
-              </div>
+                    "></i>
+                Logout</a>
             </div>
           </div>
-        </div>
-      </header>
-
-      <!-- ========== Left Sidebar Start ========== -->
-      <div class="vertical-menu">
-        <div data-simplebar class="h-100">
-          <!--- Sidemenu -->
-          <div id="sidebar-menu">
-            <!-- Left Menu Start -->
-            <ul class="metismenu list-unstyled" id="side-menu">
-              <li>
-                <a href="painel.html" class="waves-effect">
-                  <i class="fas fa-home"></i>
-                  <span>Início</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="cameras-de-seguranca.html" class="waves-effect">
-                  <i class="fas fa-camera"></i>
-                  <span>Câmeras de segurança</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="contato.html" class="waves-effect">
-                  <i class="fas fa-phone"></i>
-                  <span>Contato</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="detalhamentos.html" class="waves-effect">
-                  <i class="fas fa-chart-line"></i>
-                  <span>Detalhamentos</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="faturas.html" class="waves-effect">
-                  <i class="fas fa-file-invoice-dollar"></i>
-                  <span>Faturas</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="reservas.html" class="waves-effect">
-                  <i class="fas fa-calendar-alt"></i>
-                  <span>Reservas</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="reunioes.html" class="waves-effect">
-                  <i class="fas fa-handshake"></i>
-                  <span>Reuniões</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- Sidebar -->
         </div>
       </div>
-      <!-- Left Sidebar End -->
+    </header>
 
-      <!-- ============================================================== -->
-      <!-- Start right Content here -->
-      <!-- ============================================================== -->
-      <div class="main-content">
-        <div class="page-content">
-          <div class="container-fluid">
-            <!-- start page title -->
-            <div class="row align-items-center">
-              <div class="col-sm-6">
-                <div class="page-title-box">
-                  <h4 class="font-size-18">Contato</h4>
-                  <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item">
-                      <a href="javascript: void(0);">Painel</a>
-                    </li>
-                    <li class="breadcrumb-item active">Contato</li>
-                    <li class="breadcrumb-item active">Cadastrar</li>
-                  </ol>
-                </div>
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="vertical-menu">
+      <div data-simplebar class="h-100">
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+          <!-- Left Menu Start -->
+          <ul class="metismenu list-unstyled" id="side-menu">
+            <li>
+              <a href="painel.html" class="waves-effect">
+                <i class="fas fa-home"></i>
+                <span>Início</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="cameras-de-seguranca.html" class="waves-effect">
+                <i class="fas fa-camera"></i>
+                <span>Câmeras de segurança</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="contato.html" class="waves-effect">
+                <i class="fas fa-phone"></i>
+                <span>Contato</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="detalhamentos.html" class="waves-effect">
+                <i class="fas fa-chart-line"></i>
+                <span>Detalhamentos</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="faturas.html" class="waves-effect">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <span>Faturas</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="reservas.html" class="waves-effect">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Reservas</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="reunioes.html" class="waves-effect">
+                <i class="fas fa-handshake"></i>
+                <span>Reuniões</span>
+              </a>
+            </li>
+
+            <hr style="background-color: white;">
+
+            <li>
+              <a href="ajuda.html" class=" waves-effect">
+                <i class="fas fa-question-circle"></i>
+                <span>Ajuda</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Sidebar -->
+      </div>
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+      <div class="page-content">
+        <div class="container-fluid">
+          <!-- start page title -->
+          <div class="row align-items-center">
+            <div class="col-sm-6">
+              <div class="page-title-box">
+                <h4 class="font-size-18">Contato</h4>
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a href="javascript: void(0);">Painel</a>
+                  </li>
+                  <li class="breadcrumb-item active">Contato</li>
+                  <li class="breadcrumb-item active">Cadastrar</li>
+                </ol>
               </div>
-              <div class="col-sm-6">
-                <div class="float-right d-none d-md-block">
-                  <div class="dropdown">
-                  
-                  </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="float-right d-none d-md-block">
+                <div class="dropdown">
+
                 </div>
               </div>
             </div>
-            <!-- end page title -->
+          </div>
+          <!-- end page title -->
 
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="form-group row">
-                      <label
-                        for="example-month-input"
-                        class="col-sm-3 col-form-label"
-                        >Assunto</label
-                      >
-                      <div class="col-sm-9">
-                        <select name="" id="" class="form-control">
-                          <option value="">Selecionar</option>
-                          <option value="">Dúvida</option>
-                          <option value="">Reclamação</option>
-                          <option value="">Sugestão</option>
-                        </select>
-                      </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="form-group row">
+                    <label for="example-month-input" class="col-sm-3 col-form-label">Assunto</label>
+                    <div class="col-sm-9">
+                      <select name="" id="" class="form-control">
+                        <option value="">Selecionar</option>
+                        <option value="">Dúvida</option>
+                        <option value="">Reclamação</option>
+                        <option value="">Sugestão</option>
+                      </select>
                     </div>
+                  </div>
 
-                    <div class="form-group row col-12">
-                      <label for="example-month-input">Mensagem</label>
-                      <textarea
-                        name=""
-                        id=""
-                        cols="1"
-                        rows="3"
-                        class="form-control"
-                      ></textarea>
-                    </div>
-                    <div class="float-rigth  d-md-block">
-                      <div class="dropdown">
-                        <button
-                          class="
+                  <div class="form-group row col-12">
+                    <label for="example-month-input">Mensagem</label>
+                    <textarea name="" id="" cols="1" rows="3" class="form-control"></textarea>
+                  </div>
+                  <div class="float-rigth  d-md-block">
+                    <div class="dropdown">
+                      <button class="
                             btn btn-gray
                             dropdown-toggle
                             waves-effect waves-light
-                          "
-                          type="button"
-                          data-toggle="modal"
-                          data-target=".bs-example-modal-center"
-                        >
-                          Voltar
-                        </button>
-                    <div class="float-right  d-md-block">
-                      <div class="dropdown">
-                        <button
-                          class="
+                          " type="button" data-toggle="modal" data-target=".bs-example-modal-center">
+                        Voltar
+                      </button>
+                      <div class="float-right  d-md-block">
+                        <div class="dropdown">
+                          <button class="
                             btn btn-danger
                             dropdown-toggle
                             waves-effect waves-light
-                          "
-                          type="button"
-                          data-toggle="modal"
-                          data-target=".bs-example-modal-center"
-                        >
-                          Limpar
-                        </button>
-                        <button
-                          class="
+                          " type="button" data-toggle="modal" data-target=".bs-example-modal-center">
+                            Limpar
+                          </button>
+                          <button class="
                             btn btn-primary
                             dropdown-toggle
                             waves-effect waves-light
-                          "
-                          type="button"
-                          data-toggle="modal"
-                          data-target=".bs-example-modal-center"
-                        >
-                          Cadastrar
-                        </button>
-                    <div class="float-right d-none d-md-block">
-                      <div class="dropdown">
-                        
+                          " type="button" data-toggle="modal" data-target=".bs-example-modal-center">
+                            Cadastrar
+                          </button>
+                          <div class="float-right d-none d-md-block">
+                            <div class="dropdown">
+
+                            </div>
+                          </div>
+                          <!-- container-fluid -->
+                        </div>
+
+                        <!-- End Page-content -->
                       </div>
                     </div>
-                    <!-- container-fluid -->
-                  </div>
 
-                  <!-- End Page-content -->
+                    <!-- end card -->
+                  </div>
+                </div>
+                <!-- end row -->
+              </div>
+              <!-- container-fluid -->
+            </div>
+
+            <!-- End Page-content -->
+
+            <footer class="footer">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    WebCond.
+                  </div>
                 </div>
               </div>
+            </footer>
 
-              <!-- end card -->
-            </div>
+            <!-- JAVASCRIPT -->
+            <script src="assets/libs/jquery/jquery.min.js"></script>
+            <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+            <script src="assets/libs/simplebar/simplebar.min.js"></script>
+            <script src="assets/libs/node-waves/waves.min.js"></script>
+
+            <!-- plugin js -->
+            <script src="assets/libs/moment/min/moment.min.js"></script>
+            <script src="assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
+            <script src="assets/libs/@fullcalendar/core/main.min.js"></script>
+            <script src="assets/libs/@fullcalendar/bootstrap/main.min.js"></script>
+            <script src="assets/libs/@fullcalendar/daygrid/main.min.js"></script>
+            <script src="assets/libs/@fullcalendar/timegrid/main.min.js"></script>
+            <script src="assets/libs/@fullcalendar/interaction/main.min.js"></script>
           </div>
-          <!-- end row -->
-        </div>
-        <!-- container-fluid -->
-      </div>
+</body>
 
-      <!-- End Page-content -->
-
-      <footer class="footer">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-              ©
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              WebCond.
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <!-- JAVASCRIPT -->
-      <script src="assets/libs/jquery/jquery.min.js"></script>
-      <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-      <script src="assets/libs/simplebar/simplebar.min.js"></script>
-      <script src="assets/libs/node-waves/waves.min.js"></script>
-
-      <!-- plugin js -->
-      <script src="assets/libs/moment/min/moment.min.js"></script>
-      <script src="assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
-      <script src="assets/libs/@fullcalendar/core/main.min.js"></script>
-      <script src="assets/libs/@fullcalendar/bootstrap/main.min.js"></script>
-      <script src="assets/libs/@fullcalendar/daygrid/main.min.js"></script>
-      <script src="assets/libs/@fullcalendar/timegrid/main.min.js"></script>
-      <script src="assets/libs/@fullcalendar/interaction/main.min.js"></script>
-    </div>
-  </body>
 </html>

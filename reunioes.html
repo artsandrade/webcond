@@ -3,12 +3,21 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>WebCond | Faturas</title>
+    <title>WebCond | Reuniões</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/webcond-icone.svg">
 
     <link href="assets/libs/chartist/chartist.min.css" rel="stylesheet">
+
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
 
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -163,6 +172,15 @@
                             </a>
                         </li>
 
+                        <hr style="background-color: white;">
+
+                        <li>
+                            <a href="ajuda.html" class=" waves-effect">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Ajuda</span>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -182,10 +200,10 @@
                     <div class="row align-items-center">
                         <div class="col-sm-6">
                             <div class="page-title-box">
-                                <h4 class="font-size-18">Faturas</h4>
+                                <h4 class="font-size-18">Reuniões</h4>
                                 <ol class="breadcrumb mb-0">
                                     <li class="breadcrumb-item"><a href="javascript: void(0);">Painel</a></li>
-                                    <li class="breadcrumb-item active">Faturas</li>
+                                    <li class="breadcrumb-item active">Reuniões</li>
                                 </ol>
                             </div>
                         </div>
@@ -193,7 +211,7 @@
                     <!-- end page title -->
 
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="form-group row">
@@ -219,62 +237,67 @@
                                         <div class="col-2">
                                             <select class="form-control inline" name="" id="">
                                                 <option value="">Selecionar</option>
+                                                <option value="">Cancelada</option>
                                                 <option value="">Pendente</option>
-                                                <option value="">Aberto</option>
-                                                <option value="">Paga</option>
+                                                <option value="">Realizada</option>
                                             </select>
                                         </div>
                                         <div class="col-sm-2">
                                             <button class="btn btn-primary">Filtrar</button>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-centered table-nowrap mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Data</th>
-                                                <th scope="col">Horário</th>
-                                                <th scope="col">Título</th>
-                                                <th scope="col">Descrição</th>
-                                                <th scope="col">Status</th>
-                                                <th scope="col"></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>12/06/2021</td>
-                                                <td>19:30</td>
-                                                <td>Reunião ordinária Junho/2021</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at
-                                                    magni cumque eveniet reprehenderit, aspernatur ipsam.</td>
-                                                <td><span class="badge badge-warning">Pendente</span></td>
-                                                <td><a href="visualizar-reuniao.html"
-                                                        class="btn btn-primary">Ingressar</a></td>
-                                            </tr>
+                                    <div class="form-group row">
+                                        <table id="datatable" class="table table-bordered dt-responsive tabela"
+                                            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Data</th>
+                                                    <th scope="col">Horário</th>
+                                                    <th scope="col">Título</th>
+                                                    <th scope="col">Descrição</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>12/06/2021</td>
+                                                    <td>19:30</td>
+                                                    <td>Reunião ordinária Junho/2021</td>
+                                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Velit at
+                                                        magni cumque eveniet reprehenderit, aspernatur ipsam.</td>
+                                                    <td><span class="badge badge-warning">Pendente</span></td>
+                                                    <td><a href="participar-reuniao.html"
+                                                            class="btn btn-primary">Participar</a></td>
+                                                </tr>
 
-                                            <tr>
-                                                <td>12/06/2021</td>
-                                                <td>19:30</td>
-                                                <td>Reunião ordinária Junho/2021</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at
-                                                    magni cumque eveniet reprehenderit, aspernatur ipsam.</td>
-                                                <td><span class="badge badge-danger">Cancelada</span></td>
-                                                <td></td>
-                                            </tr>
+                                                <tr>
+                                                    <td>12/06/2021</td>
+                                                    <td>19:30</td>
+                                                    <td>Reunião ordinária Junho/2021</td>
+                                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Velit at
+                                                        magni cumque eveniet reprehenderit, aspernatur ipsam.</td>
+                                                    <td><span class="badge badge-danger">Cancelada</span></td>
+                                                    <td></td>
+                                                </tr>
 
-                                            <tr>
-                                                <td>12/06/2021</td>
-                                                <td>19:30</td>
-                                                <td>Reunião ordinária Junho/2021</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at
-                                                    magni cumque eveniet reprehenderit, aspernatur ipsam.</td>
-                                                <td><span class="badge badge-success">Realizada</span></td>
-                                                <td><a href="#" class="btn btn-primary">Visualizar</a></td>
-                                            </tr>
+                                                <tr>
+                                                    <td>12/06/2021</td>
+                                                    <td>19:30</td>
+                                                    <td>Reunião ordinária Junho/2021</td>
+                                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Velit at
+                                                        magni cumque eveniet reprehenderit, aspernatur ipsam.</td>
+                                                    <td><span class="badge badge-success">Realizada</span></td>
+                                                    <td><a href="visualizar-reuniao.html"
+                                                            class="btn btn-primary">Visualizar</a></td>
+                                                </tr>
 
-                                        </tbody>
-                                    </table>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -311,6 +334,25 @@
     <script src="assets/libs/metismenu/metisMenu.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
     <script src="assets/libs/node-waves/waves.min.js"></script>
+
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="assets/libs/jszip/jszip.min.js"></script>
+    <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+    <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <!-- Responsive examples -->
+    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+    <!-- Datatable init js -->
+    <script src="assets/js/pages/datatables.init.js"></script>
 
     <!-- Peity chart-->
     <script src="assets/libs/peity/jquery.peity.min.js"></script>
